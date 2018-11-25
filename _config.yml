@@ -16,10 +16,13 @@
 title: Kristina Maceković
 email: kmacekovic@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my personal website. You can find out about my thoughts on <a href="https://medium.com/@macekovick">Medium<span class="star">&#176;</span></a>, about my typing skills on <a href="https://github.com/kristinamacekovic">Github<span class="star">&#176;</span></a> and about my obsession with new and interesting products on <a href="https://www.producthunt.com/@neznam_neznam_n">Product Hunt<span class="star">&#176;</span></a> (when I have the time, I also like to test products on <a href="https://www.utest.com/profile/p449903/about">uTest<span class="star">&#176;</span></a>). You can find my resume <a href="https://github.com/kristinamacekovic/kristinamacekovic.github.io/blob/master/resume.pdf">here<span class="star">&#176;</span></a>. If you'd like, contact me at <a href="mailto:kmacekovic@gmail.com">kmacekovic@gmail.com<span class="star">&#176;</span></a>. Oh, and I forgot <a href="https://codepen.io/macekovick/">CodePen<span class="star">&#176;</span></a>.
+  This is my personal website, where you can check out my posts and projects. You can find out about my thoughts on <a href="https://medium.com/@macekovick">Medium</a>, about my typing skills on <a href="https://github.com/kristinamacekovic">Github</a> and about my obsession with new and interesting products on <a href="https://www.producthunt.com/@neznam_neznam_n">Product Hunt</a> (when I have the time, I also like to test products on <a href="https://www.utest.com/profile/p449903/about">uTest</a>). You can find my resume <a href="https://github.com/kristinamacekovic/kristinamacekovic.github.io/blob/master/resume.pdf">here</a>. If you'd like, contact me at <a href="mailto:kmacekovic@gmail.com">kmacekovic@gmail.com</a>. Oh, and I forgot <a href="https://codepen.io/macekovick/">CodePen</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kristinamacekovic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: kristinamacekovic
+
+logo: "/assets/img/logo.png"
+google_analytics: UA-129657260-1
 
 # Build settings
 markdown: kramdown

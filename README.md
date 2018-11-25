@@ -1,0 +1,1 @@
+This project is my personal website and blog. Build on <a href="https://jekyllrb.com">jekyll</a> with the <a href="https://pages-themes.github.io/minimal/">minimal theme</a> and hosted on Github Pages.
