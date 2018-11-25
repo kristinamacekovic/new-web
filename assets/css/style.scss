@@ -2,3 +2,20 @@
 ---
 
 @import "jekyll-theme-minimal";
+.star {
+  color: red;
+}
+
+a:before {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
