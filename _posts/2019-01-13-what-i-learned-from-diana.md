@@ -1,5 +1,3 @@
-# What I learned from Diana
-
 *This is a summary and reflection on the manga "The Adventures of Johnny Bunko" by Daniel H. Pink. You can purchase the book on [Amazon](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide-ebook/dp/B0015DRPL8).*
 
 Stop me if you've heard this one before: you're out of school (college, university; whatever), ready to take on the world. But soon enough, you come to the realisation that you don't really know how and what that actually means for you personally—you've spent your whole life following the roadmap carefully laid out for you (by whom exactly?). Now, suddenly, it's up to you to make the new roadmap and put it into action. 
