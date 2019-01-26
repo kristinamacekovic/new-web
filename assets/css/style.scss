@@ -3,10 +3,15 @@
 
 @import "jekyll-theme-minimal";
 
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
 h1 #title {
   text-decoration: none;
   border: none;
   color: black;
+  font-weight: bold;
 }
 
 #logo {
