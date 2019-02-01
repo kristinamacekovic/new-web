@@ -34,7 +34,7 @@ Get the site with the links to all the prisoner information. To get a manageable
 
 Now it's time to figure out how to access the last statements. Here the crucial tools is the dev tools in the browser (element inspector in particular). I was expecting the "Last Statement" to have some type of class or id, but unfortunately it didn't have, so I had to find a common structure and use that instead.
 
-![](Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png)
+![](/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png)
 
 Using the bs4's function find_all, we can find all links which contain the wanted text.
 
@@ -60,7 +60,7 @@ Now it's easy to get all the href's inside the link tags. Two of the links were 
 
 Once again, the structure of the pages with the statements wasn't unified so I had to find a pattern and apply it like this (most of the times, it ended up being the 5th paragraph).
 
-![](Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png)
+![](/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png)
 
 I then defined a function which goes through an array of urls, for each url processes it, gets the statement and appends it to an array.
 
@@ -106,7 +106,7 @@ Make a word cloud using the Wordcloud function (from the module of the same name
 
 # The Result
 
-![](last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png)
+![](/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png)
 
 # Summary
 
