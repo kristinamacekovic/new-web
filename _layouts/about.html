@@ -4,43 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
+    {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a id="title" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-        
-        {% if site.logo %}
-          <img id="logo" src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <!--<p>{{ site.description | default: site.github.project_tagline }}</p>-->
-        <p><a href="https://kristinamacekovic.github.io/about/">About</a></p>
-
-        <!--{% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}-->
-      </header>
-      <section>
-
-      {{ content }}
-
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="postWrapper">
+      <h1>About me</h1>
+      <a href="https://medium.com/@macekovick">Medium</a><br>
+  <a href="https://github.com/kristinamacekovic">Github</a><br>
+  <a href="https://www.producthunt.com/@neznam_neznam_n">Product Hunt</a><br>
+  <a href="https://www.utest.com/profile/p449903/about">uTest</a><br>
+  <a href="mailto:kmacekovic@gmail.com">kmacekovic@gmail.com</a><br>
+  <a href="https://codepen.io/macekovick/">CodePen</a>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}
