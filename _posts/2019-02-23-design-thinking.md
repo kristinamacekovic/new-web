@@ -6,7 +6,7 @@ Concerning the materials, I found a wonderful workshop kit that's free to downlo
 
 # What is it?
 
-Design is oftentimes mistaken for an aesthetic-focused field. On the contrary—while pleasing [ˆ1]  aesthetics is often a side product of good [ˆ2] design, the main objective of design is to *solve problems while putting users and experiences first*.
+Design is oftentimes mistaken for an aesthetic-focused field. <span markdown="1">On the contrary—while pleasing [ˆ1]  aesthetics is often </span> a side product of <span markdown="2">good [ˆ2] design</span>, the main objective of design is to *solve problems while putting users and experiences first*.
 
 Design thinking is a methodology used by designers to facilitate ideation and rapid prototype development by focusing on users and their needs. Although the name says design, you don't need to be a designer to reap benefits from its usage. If you have a problem you want to solve with a clear user at the other end, design thinking is probably a good place to start.
 
