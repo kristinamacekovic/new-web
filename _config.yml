@@ -16,12 +16,7 @@
 title: Kristina Maceković
 email: kmacekovic@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  <a href="https://medium.com/@macekovick">Medium</a><br>
-  <a href="https://github.com/kristinamacekovic">Github</a><br>
-  <a href="https://www.producthunt.com/@neznam_neznam_n">Product Hunt</a><br>
-  <a href="https://www.utest.com/profile/p449903/about">uTest</a><br>
-  <a href="mailto:kmacekovic@gmail.com">kmacekovic@gmail.com</a><br>
-  <a href="https://codepen.io/macekovick/">CodePen</a>
+Personal web
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kristinamacekovic.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: kristinamacekovic
