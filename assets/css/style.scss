@@ -4,14 +4,14 @@
 @import 'jekyll-theme-minimal';
 
 body {
-  font-family: serif;
+  font-family: 'Noto Sans', sans-serif;
   //font-size: 20px;
   //line-height: 1.9em;
 }
 
 .postWrapper {
   //font-size: 20px;
-  word-wrap: break-word;
+  //word-wrap: break-word;
   width: 30em;
   margin: 0 auto;
 }
@@ -26,6 +26,8 @@ h1 #title {
 
 #logo {
   border-radius: 50%;
+  height: 4em;
+  width: 4em;
 }
 
 a:before {
