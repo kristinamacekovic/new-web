@@ -21,6 +21,8 @@ a:after {
 a:hover {
   text-decoration: none;
   background-color: purple;
-  padding: 2em;
+  padding: 2px 2px;
+  border: 1px solid purple;
+  border-radius: 2px;
   color: #727272;
 }
