@@ -14,8 +14,10 @@ a,
 a:before,
 a:after {
   text-decoration: none;
-  border-bottom: 1px solid purple;
-  color: black;
+  padding: 2px 2px;
+  border: 1px solid purple;
+  border-radius: 2px;
+  color: #727272;
 }
 
 a:hover {
