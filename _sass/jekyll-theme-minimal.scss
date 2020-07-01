@@ -69,8 +69,9 @@ a {
 a:hover,
 a:focus {
   font-weight: bold;
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 5px solid var(--accent-color);
   color: var(--text-color);
+  margin-bottom: -10px;
 }
 
 a small {
