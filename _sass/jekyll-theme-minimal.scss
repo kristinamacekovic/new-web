@@ -62,13 +62,13 @@ h6 {
 a {
   text-decoration: none;
   font-weight: bold;
-  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 a:hover,
 a:focus {
   font-weight: bold;
-  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 a small {
