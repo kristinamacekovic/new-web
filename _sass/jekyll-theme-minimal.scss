@@ -4,13 +4,14 @@
 :root {
   --bckg-color: rgb(93.7%, 89.7%, 85.9%);
   --accent-color: rgb(100%, 100%, 11.6%);
+  --text-color: rgb(16.4%, 22.6%, 16.4%);
 }
 
 body {
   background-color: var(--bckg-color);
   padding: 50px;
   font: 18px/1.5 sans-serif;
-  color: black;
+  color: var(--text-color);
   font-weight: 400;
 }
 
