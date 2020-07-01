@@ -3,7 +3,7 @@
 
 :root {
   --bckg-color: rgb(93.7%, 89.7%, 85.9%);
-  --accent-color: rgb(100%, 100%, 11.6%);
+  --accent-color: rgb(100%, 91.4%, 0%);
   --text-color: rgb(16.4%, 22.6%, 16.4%);
 }
 
@@ -98,14 +98,14 @@ code,
 pre {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal,
     Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333;
+  color: var(--bckg-color);
 }
 
 pre {
   padding: 8px 15px;
-  background: #f8f8f8;
+  background: var(--text-color);
   border-radius: 5px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--text-color);
   overflow-x: auto;
 }
 
@@ -224,6 +224,7 @@ hr {
   background: #e5e5e5;
   height: 1px;
   margin: 0 0 20px;
+  display: none;
 }
 
 footer {
