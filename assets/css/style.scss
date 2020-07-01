@@ -10,7 +10,9 @@ h1 #title {
   font-weight: bold;
 }
 
-a {
+a,
+a:before,
+a:after {
   text-decoration: none;
   border-bottom: 1px solid purple;
   color: black;
