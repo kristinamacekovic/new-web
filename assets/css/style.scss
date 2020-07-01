@@ -10,25 +10,14 @@ h1 #title {
   font-weight: bold;
 }
 
-/*
-#logo {
-  border-radius: 50%;
-}
-
-a:before {
-  text-decoration: none;
-  border-bottom: 1px solid red;
-  color: #727272;
-}
-
 a {
   text-decoration: none;
-  border-bottom: 1px solid red;
-  color: #727272;
+  border-bottom: 1px solid purple;
 }
 
 a:hover {
   text-decoration: none;
-  border-bottom: 1px solid red;
+  background-color: purple;
+  padding: 2em;
   color: #727272;
-}*/
+}
