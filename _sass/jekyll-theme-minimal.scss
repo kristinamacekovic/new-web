@@ -1,8 +1,12 @@
 //@import 'fonts';
 @import "rouge-github";
 
+:root {
+  --bckg-color: rgb(93.7%, 89.7%, 85.9%);
+}
+
 body {
-  background-color: #fafafa;
+  background-color: var(--bckg-color);
   padding: 50px;
   font: 18px/1.5 sans-serif;
   color: black;
@@ -28,6 +32,10 @@ dl {
   margin: 0 0 20px;
 }
 
+ol {
+  list-style: none;
+}
+
 h1,
 h2,
 h3 {
@@ -50,14 +58,13 @@ h6 {
 }
 
 a {
-  /*color: #267cb9;*/
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover,
 a:focus {
-  color: #069;
-  /*font-weight: bold;*/
+  font-weight: bold;
 }
 
 a small {
