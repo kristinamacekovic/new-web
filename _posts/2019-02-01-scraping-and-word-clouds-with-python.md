@@ -1,3 +1,7 @@
+---
+tags: python code project
+---
+
 Recently I started going through Harvard's [CS109 class](http://cs109.github.io/2015/), which aims to be a practical and broad intro to data science (using python). I'm enjoying it a lot, and it has definitely given me a push to do something with python (finally!).
 
 A few months ago, I was intrigued by the beautiful SQL lessons at [SELECT \* SQL](https://selectstarsql.com)—mainly because of the excellent content, but also because of the intriguing data set. The data set deals with last statements of prisoners on death row. It is definitely a controversial topic, but I think an interesting one that can only spark productive discussion. What is really interesting is that such data _exists_ and is _publicly accessible._

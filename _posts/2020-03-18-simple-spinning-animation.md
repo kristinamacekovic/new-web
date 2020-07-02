@@ -1,3 +1,7 @@
+---
+tags: code css project
+---
+
 I wanted to start exploring animations using CSS so I started with this simple example and wanted to share! VSCode has a very good MDN reference and suggestions concerning different animation functions. If you want to experiment more with bezier curves, check out [cubic-bezier.com](https://cubic-bezier.com/).
 
 Without further ado, here’s the code:
@@ -7,7 +11,12 @@ Without further ado, here’s the code:
 <html lang="“en”">
   <head>
     <meta charset="“UTF-8”" />
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
+    <meta
+      name="“viewport”"
+      content="“width"
+      ="device-width,"
+      initial-scale="1.0”"
+    />
     <title>Practicing CSS Animations</title>
     <style>
       :root {

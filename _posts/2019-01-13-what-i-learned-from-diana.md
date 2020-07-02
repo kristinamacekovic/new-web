@@ -1,20 +1,24 @@
-*This is a summary and reflection on the manga "The Adventures of Johnny Bunko" by Daniel H. Pink. You can purchase the book on [Amazon](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide-ebook/dp/B0015DRPL8).*
+---
+tags: life notes book
+---
 
-Stop me if you've heard this one before: you're out of school (college, university; whatever), ready to take on the world. But soon enough, you come to the realisation that you don't really know how and what that actually means for you personally—you've spent your whole life following the roadmap carefully laid out for you (by whom exactly?). Now, suddenly, it's up to you to make the new roadmap and put it into action. 
+_This is a summary and reflection on the manga "The Adventures of Johnny Bunko" by Daniel H. Pink. You can purchase the book on [Amazon](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide-ebook/dp/B0015DRPL8)._
+
+Stop me if you've heard this one before: you're out of school (college, university; whatever), ready to take on the world. But soon enough, you come to the realisation that you don't really know how and what that actually means for you personally—you've spent your whole life following the roadmap carefully laid out for you (by whom exactly?). Now, suddenly, it's up to you to make the new roadmap and put it into action.
 
 It turns out, it's not that easy to do. In this new world, you're the one who defines success and happiness. Unfortunately, up till now, success was only measured in terms of standardised tests and competition. How do you go about defining these new parameters that will be tailored to you, and not just follow everybody else's lead (supposing this is what you want to do)?
 
-When you first start thinking about your working career (and in that respect, most of your adult life), if you're not one of the lucky ones that know from a young age what they want to do, you're tortured by questions. What do I want to do with my life? What if you studied something just because it was the "safest" choice at the time? If you want to change directions, how to do it? How can I be happy at work? How can I be *good* at what I do? How can I make a n-year plan that will take me where I want to be? 
+When you first start thinking about your working career (and in that respect, most of your adult life), if you're not one of the lucky ones that know from a young age what they want to do, you're tortured by questions. What do I want to do with my life? What if you studied something just because it was the "safest" choice at the time? If you want to change directions, how to do it? How can I be happy at work? How can I be _good_ at what I do? How can I make a n-year plan that will take me where I want to be?
 
 All these questions and more have been bugging me too for some time, so when I first learned about this unique book while listening to Tim Ferriss' [podcast](https://tim.blog/2014/08/29/kevin-kelly/) where he interviewed Kevin Kelly, I immediately jumped to the opportunity to read it. This book is actually in manga format and exceptionally easy and fast to read, but the lessons you take from it can serve you for years to come. As the name says, it follows the adventures of Johnny Bunko, a new graduate working at his first job. Of course, he is tormented by the usual things people in that position experience: horrible boss, uninspiring work, wishful thinking about other possible things he would like to be working on, etc. With the help of some magic chopsticks, he gets help from a magical woman-creature (with an MBA from Oxford funny enough) called Diana. We can think of Diana as the fairy godmother of office workers, sent to teach the masses about what makes a successful and satisfying career. With no further ado, this is what Johnny and I have learned from Diana.
 
 # Lesson 1: There is no plan
 
-Probably most of us have had or currently have some sort of a "plan" in place, which is supposed to take us to the place we want to be in a few years time. The problem is—life doesn't work that way, and if you force it to try to work that way, you're probably just going to get stuck in one place. Usually we think (well we *plan*) we're going to do A, which is going to open doors for us to B, which will ultimately get us an offer from C, which we wanted in the first place. But life and careers don't have to be that way, and much to our dissatisfaction, they usually aren't. The real scenario would look more like A, then soup, then colour green, then cloud, and finally get to W.
+Probably most of us have had or currently have some sort of a "plan" in place, which is supposed to take us to the place we want to be in a few years time. The problem is—life doesn't work that way, and if you force it to try to work that way, you're probably just going to get stuck in one place. Usually we think (well we _plan_) we're going to do A, which is going to open doors for us to B, which will ultimately get us an offer from C, which we wanted in the first place. But life and careers don't have to be that way, and much to our dissatisfaction, they usually aren't. The real scenario would look more like A, then soup, then colour green, then cloud, and finally get to W.
 
 How to deal with this? What distinguishes most successful people from the rest is that they make decisions for fundamental instead of instrumental reasons. What's the difference? You do something for **instrumental** reasons because you think it will lead to something else, regardless if you enjoy it or you think it's worthwhile. On the other hand, you so something for **fundamental** reasons if you think it's valuable, either to you or somebody else, and regardless of what it may lead to. People who use that kind of reasoning (usually they don't think about it, they're just wired like that) take certain jobs because and only if they know they will enjoy the work, the culture etc, and not because it may be a stepping stone for something else. They also learn and do stuff just for their intrinsic value, not because it's popular, sought after or prestigious.
 
-Jason Fried (founder of Basecamp) has stated he never makes plans because it doesn't make sense to make plans based on you *now*, because the person you'll be when you achieve this will be totally different. When you think of it that way, it makes more sense, right?
+Jason Fried (founder of Basecamp) has stated he never makes plans because it doesn't make sense to make plans based on you _now_, because the person you'll be when you achieve this will be totally different. When you think of it that way, it makes more sense, right?
 
 # Lesson 2: Think strengths, not weaknesses
 
@@ -42,7 +46,7 @@ No amount of natural talent will ever trump persistence. This is just a fact, bu
 
 Too many people fear failure (oftentimes the product of traditional education), usually not to feel embarrassed and ridiculed by peers. On the other hand, Peter Thiel (founder of Paypal, Palantir, author of "0 to 1") thinks that failure is overrated, in the sense that (companies, but can be applied to people as well) tend to guard themselves from failure by keeping their exit strategies (options) open.
 
-What we should actually do is make *excellent* mistakes. Meaning: make mistakes from which the benefits of what you've learned exceed the costs of the screw-up.
+What we should actually do is make _excellent_ mistakes. Meaning: make mistakes from which the benefits of what you've learned exceed the costs of the screw-up.
 
 # Lesson 6: Leave an imprint
 
