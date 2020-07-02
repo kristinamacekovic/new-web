@@ -99,6 +99,10 @@ pre code {
   overflow-x: auto;
 }
 
+::-webkit-scrollbar {
+  background-color: var(--bckg-color);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
