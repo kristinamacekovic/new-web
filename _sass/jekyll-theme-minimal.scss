@@ -91,15 +91,12 @@ blockquote {
 
 pre {
   overflow-x: scroll;
-  font-size: 13px;
   border: none;
-  background-color: var(--bckg-color);
 }
 pre code {
   word-wrap: normal;
   white-space: pre;
   overflow-x: auto;
-  background-color: var(--bckg-color);
 }
 
 table {
