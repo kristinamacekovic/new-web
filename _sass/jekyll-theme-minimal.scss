@@ -60,8 +60,7 @@ a,
 a:hover,
 a:focus {
   color: var(--text-color);
-  margin-bottom: -10px;
-  text-decoration-color: var(--accent-color);
+  text-decoration-color: var(--text-color-light);
   text-decoration-style: wavy;
   text-decoration-line: underline;
   text-decoration-thickness: 1em;
@@ -102,8 +101,8 @@ pre {
 pre {
   padding: 8px 15px;
   white-space: pre-wrap;
-  border-top: 5px solid var(--accent-color);
-  border-bottom: 5px solid var(--accent-color);
+  border-top: 5px solid var(--text-color-light);
+  border-bottom: 5px solid var(--text-color-light);
 }
 
 table {
