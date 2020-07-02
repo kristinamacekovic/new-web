@@ -5,6 +5,7 @@
   --bckg-color: rgba(239, 229, 219, 0.514);
   --accent-color: rgba(255, 234, 0, 0.301);
   --text-color: rgb(16.4%, 22.6%, 16.4%);
+  --text-color-light: rgba(42, 58, 42, 0.397);
 }
 
 body {
@@ -102,6 +103,9 @@ pre {
   padding: 8px 15px;
   border-radius: 5px;
   white-space: pre-wrap;
+  border-top: 5px solid var(--text-color-light);
+  border-bottom: 5px solid var(--text-color-light);
+  background-color: var(--bckg-color);
 }
 
 table {
