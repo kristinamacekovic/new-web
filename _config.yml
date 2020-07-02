@@ -27,6 +27,7 @@ kramdown:
 theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
+  - jekyll-tagging
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -38,3 +39,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+tag_page_layout: tagpage
+tag_page_dir: tag
+tag_permalink_style: pretty
