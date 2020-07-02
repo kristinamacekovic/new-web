@@ -95,14 +95,94 @@ pre {
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
     "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
     monospace;
-  color: var(--text-color);
+  //color: var(--text-color);
 }
 
-pre {
+/*pre {
   padding: 8px 15px;
   white-space: pre-wrap;
   border-top: 5px solid var(--text-color-light);
   border-bottom: 5px solid var(--text-color-light);
+}*/
+
+pre {
+  position: relative;
+  background-color: #232323;
+  margin-bottom: 40px;
+  overflow-x: scroll;
+  font-size: 13px;
+  color: #e6e1dc;
+  border: none;
+  line-height: 1.9em;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+  overflow-x: auto;
+}
+pre .gd {
+  color: #e6e1dc;
+  background-color: #660000;
+}
+pre .gi {
+  color: #e6e1dc;
+  background-color: #144212;
+}
+pre .c,
+pre .c1,
+pre .c2 {
+  color: #bc9458;
+  font-style: italic;
+}
+pre .s1,
+pre .s2,
+pre .s,
+pre .sr {
+  color: #a5c261;
+}
+pre .nv {
+  color: #d0d0ff;
+}
+pre .k,
+pre .o,
+pre .kp {
+  color: #cc7833;
+}
+pre .mi {
+  color: #a5c261;
+}
+pre .ss {
+  color: #6e9cbe;
+}
+pre .si {
+  color: #519f50;
+}
+pre .vi {
+  color: #d0d0ff;
+}
+pre .p {
+  color: #cc7833;
+}
+pre .m {
+  color: #a5c261;
+}
+pre .nb {
+  color: #a5c261;
+}
+pre .mh {
+  color: #d0d0ff;
+}
+pre .nl {
+  color: #6e9cbe;
+}
+pre .nt,
+pre .nc,
+pre .na {
+  color: #ffc66d;
+}
+pre .cp {
+  color: transparent;
+  visibility: hidden;
 }
 
 table {
@@ -250,8 +330,6 @@ footer {
   }
 
   section {
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
     padding: 20px 0;
     margin: 0 0 20px;
   }

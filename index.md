@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<ol>
+<ol class="index-ol">
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
