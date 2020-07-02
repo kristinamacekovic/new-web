@@ -89,6 +89,18 @@ blockquote {
   font-style: italic;
 }
 
+pre {
+  margin-bottom: 40px;
+  overflow-x: scroll;
+  font-size: 13px;
+  border: none;
+}
+pre code {
+  word-wrap: normal;
+  white-space: pre;
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
