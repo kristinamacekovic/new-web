@@ -3,7 +3,7 @@
 
 :root {
   --bckg-color: rgba(239, 229, 219, 0.514);
-  --accent-color: rgb(100%, 100%, 11.6%);
+  --accent-color: rgba(255, 234, 0, 0.301);
   --text-color: rgb(16.4%, 22.6%, 16.4%);
 }
 
@@ -60,7 +60,7 @@ a:hover,
 a:focus {
   color: var(--text-color);
   margin-bottom: -10px;
-  text-decoration-color: rgba(255, 234, 0, 0.301);
+  text-decoration-color: var(--accent-color);
   text-decoration-style: wavy;
   text-decoration-line: underline;
   text-decoration-thickness: 1em;
@@ -96,14 +96,11 @@ pre {
     "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
     monospace;
   color: var(--text-color);
-  background: var(--text-color);
 }
 
 pre {
   padding: 8px 15px;
-  background: var(--text-color);
   border-radius: 5px;
-  border: 1px solid var(--text-color);
   white-space: pre-wrap;
 }
 
