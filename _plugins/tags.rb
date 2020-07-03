@@ -15,7 +15,7 @@ module Jekyll
         @site = site
         @base = base
         @dir  = File.join('tag', tag)
-        @name = 'index.md'
+        @name = 'index.html'
   
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), 'tagpage.html')

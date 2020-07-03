@@ -1,5 +1,5 @@
 ---
-tags: python code project
+tags: ["python", "code", "project"]
 ---
 
 Recently I started going through Harvard's [CS109 class](http://cs109.github.io/2015/), which aims to be a practical and broad intro to data science (using python). I'm enjoying it a lot, and it has definitely given me a push to do something with python (finally!).
