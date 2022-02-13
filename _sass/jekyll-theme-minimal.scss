@@ -2,8 +2,8 @@
 @import "rouge-github";
 
 :root {
-  --bckg-color: rgba(239, 229, 219, 0.514);
-  --accent-color: rgba(255, 234, 0, 0.301);
+  --bckg-color: white;
+  --accent-color: blue;
   --text-color: rgb(16.4%, 22.6%, 16.4%);
   --text-color-light: rgba(255, 164, 44, 0.315);
 }
@@ -61,9 +61,9 @@ a:hover,
 a:focus {
   color: var(--text-color);
   text-decoration-color: var(--text-color-light);
-  text-decoration-style: wavy;
-  text-decoration-line: underline;
-  text-decoration-thickness: 1em;
+  /*--text-decoration-style: wavy;
+  --text-decoration-line: underline;
+  --text-decoration-thickness: 1em;*/
 }
 
 a small {
