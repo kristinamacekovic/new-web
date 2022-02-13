@@ -1,5 +1,8 @@
 ---
-tags: design notes event
+tags:
+  - design
+  - notes
+  - event
 ---
 
 I'm increasingly big on frameworks for structured thinking, and of course design thinking is very popular right now. So when the opportunity came to attend a design thinking workshop (thanks to the lovely ladies at [Femme Palette](https://femme-palette.mn.co/share/pbLck9eCCjwAVLuK)), I was immediately sold.

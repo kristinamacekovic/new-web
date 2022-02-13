@@ -1,5 +1,8 @@
 ---
-tags: code css project
+tags:
+  - code
+  - css
+  - project
 ---
 
 I wanted to start exploring animations using CSS so I started with this simple example and wanted to share! VSCode has a very good MDN reference and suggestions concerning different animation functions. If you want to experiment more with bezier curves, check out [cubic-bezier.com](https://cubic-bezier.com/).

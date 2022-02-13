@@ -1,5 +1,7 @@
 ---
-tags: js code project tools data
+tags:
+    - code
+    - project
 ---
 
 # Description
