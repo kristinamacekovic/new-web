@@ -4,8 +4,8 @@
 :root {
   --bckg-color: white;
   --accent-color: blue;
-  --text-color: rgb(16.4%, 22.6%, 16.4%);
-  --text-color-light: rgba(255, 164, 44, 0.315);
+  --text-color: black;
+  --text-color-light: black;
 }
 
 body {
@@ -59,13 +59,12 @@ h6 {
 a,
 a:hover,
 a:focus {
-  color: var(--text-color);
-  text-decoration-color: var(--text-color-light);
+  color: var(--accent-color);
   /*--text-decoration-style: wavy;
   --text-decoration-line: underline;
   --text-decoration-thickness: 1em;*/
 }
-
+/*
 a small {
   font-size: 11px;
   color: #777;
@@ -75,7 +74,7 @@ a small {
 
 a:hover small {
   color: #777;
-}
+}*/
 
 .wrapper {
   width: 860px;
