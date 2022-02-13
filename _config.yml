@@ -42,6 +42,6 @@ gems:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-tag_page_layout: tagpage
+tag_page_layout: tag
 tag_page_dir: tag
 tag_permalink_style: pretty
