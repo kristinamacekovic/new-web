@@ -60,8 +60,9 @@ a,
 a:hover,
 a:focus {
   color: var(--accent-color);
+  text-decoration: none;
   /*--text-decoration-style: wavy;
-  --text-decoration-line: underline;
+  --text-decoration-line: none;
   --text-decoration-thickness: 1em;*/
 }
 /*
