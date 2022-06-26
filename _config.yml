@@ -24,9 +24,14 @@ github_username: kristinamacekovic
 markdown: kramdown
 kramdown:
   parse_block_html: true
-theme: jekyll-theme-minimal
+theme: hitchens-theme
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page/:num/"
+show_excerpts: true
 
 gems:
   - jekyll/tagging
@@ -45,3 +50,5 @@ gems:
 tag_page_layout: tag
 tag_page_dir: tag
 tag_permalink_style: pretty
+ignore-theme-config: true
+

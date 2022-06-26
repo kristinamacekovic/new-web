@@ -3,6 +3,7 @@ tags:
     - life
     - notes
     - book
+layout: post
 ---
 
 _This is a summary and reflection on the manga "The Adventures of Johnny Bunko" by Daniel H. Pink. You can purchase the book on [Amazon](https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide-ebook/dp/B0015DRPL8)._
