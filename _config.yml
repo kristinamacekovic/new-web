@@ -26,15 +26,11 @@ kramdown:
   parse_block_html: true
 theme: hitchens-theme
 plugins:
-  - jekyll-feed
   - jekyll-paginate
 
 paginate: 10
 paginate_path: "/page/:num/"
 show_excerpts: true
-
-gems:
-  - jekyll/tagging
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -46,9 +42,5 @@ gems:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-tag_page_layout: tag
-tag_page_dir: tag
-tag_permalink_style: pretty
 ignore-theme-config: true
 

@@ -269,6 +269,7 @@ DEPENDENCIES
   github-pages
   hitchens-theme
   jekyll-feed (~> 0.6)
+  jekyll-paginate
   jekyll-tagging
   jekyll-tagging-lite
   tzinfo-data
