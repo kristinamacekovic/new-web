@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[I learn best when I share with others]]></description><link>https://kristinamacekovic.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 05 Feb 2023 19:15:53 GMT</lastBuildDate><item><title><![CDATA[COVID19 Graphs with Observable]]></title><description><![CDATA[Description I've wanted to check out Observable for a while, but it looked pretty intimidating whenever I started. Enter COVID-19 and this…]]></description><link>https://kristinamacekovic.github.io/covid-observable-graphs/</link><guid isPermaLink="false">https://kristinamacekovic.github.io/covid-observable-graphs/</guid><pubDate>Tue, 31 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Description&lt;/h1&gt;
+&lt;p&gt;I&apos;ve wanted to check out &lt;a href=&quot;https://observablehq.com/&quot;&gt;Observable&lt;/a&gt; for a while, but it looked pretty intimidating whenever I started. Enter COVID-19 and this &lt;a href=&quot;https://observablehq.com/@observablehq/tutorial?collection=@observablehq/tutorial&quot;&gt;straightforward tutorial&lt;/a&gt; and suddenly I had an interesting topic and some tools under my belt to actually do it. I used Vega-lite for visualisations, JS and d3.js for some data wrangling, and html and markdown syntax for titles and explanations. Data is pulled via the awesome &lt;a href=&quot;https://covid19api.com&quot;&gt;COVID-19 API&lt;/a&gt;. The whole process was really fun and I was amazed by fast you can produce something without a lot of hassle. Check out the notebooks there for some serious inspiration 😍&lt;/p&gt;
+&lt;h1&gt;Link to results&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://observablehq.com/@kristinamacekovic/covid-19-pick-a-country-to-display-data&quot;&gt;COVID-19: Pick a country to display data&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Nice Resources I Found Along the Way&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://learnjsdata.com&quot;&gt;Data manipulation, cleaning, and processing in JavaScript&lt;/a&gt;:
+Website with tutorials on data wrangling with JS (mostly d3.js). I found it while I was researching how to aggregate data by an object property.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CSS Spinning Animation]]></title><description><![CDATA[I wanted to start exploring animations using CSS so I started with this simple example and wanted to share! VSCode has a very good MDN…]]></description><link>https://kristinamacekovic.github.io/css-spinning-animation/</link><guid isPermaLink="false">https://kristinamacekovic.github.io/css-spinning-animation/</guid><pubDate>Wed, 18 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to start exploring animations using CSS so I started with this simple example and wanted to share! VSCode has a very good MDN reference and suggestions concerning different animation functions. If you want to experiment more with bezier curves, check out &lt;a href=&quot;https://cubic-bezier.com/&quot;&gt;cubic-bezier.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Without further ado, here’s the code:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;!&lt;/span&gt;&lt;span class=&quot;token doctype-tag&quot;&gt;DOCTYPE&lt;/span&gt; &lt;span class=&quot;token name&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;“en”&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;meta&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;“UTF-8”&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;
+	&amp;lt;meta
+	  name=&quot;“viewport”&quot;
+	  content=&quot;“width&quot;
+	  =&quot;device-width,&quot;
+	  initial-scale=&quot;1.0”&quot;
+	/&gt;
+	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Practicing CSS Animations&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token style&quot;&gt;&lt;span class=&quot;token language-css&quot;&gt;
+	  &lt;span class=&quot;token selector&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;—-inner-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; salmon&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;—-border-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; saddlebrown&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;—-text-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; white&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	  &lt;span class=&quot;token selector&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 200px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	  &lt;span class=&quot;token selector&quot;&gt;.box&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--inner-color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 5px solid &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--border-color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 300px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 300px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 10px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 auto&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; center&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; sans-serif&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 32px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--text-color&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	  &lt;span class=&quot;token selector&quot;&gt;.box:active&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; spin 3s infinite&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token property&quot;&gt;animation-timing-function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cubic-bezier&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0.68&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; -0.55&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 0.265&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 1.55&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+	  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+	  &lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@keyframes&lt;/span&gt; spin&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;token selector&quot;&gt;0%&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		  &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+		&lt;span class=&quot;token selector&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+		  &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;360deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+	&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;style&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;box&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+	  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Hold meee&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Check out the result &lt;a href=&quot;https://codepen.io/macekovick/full/oNXypgv&quot;&gt;CodePen - Spinning Box&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notes on Design Thinking]]></title><description><![CDATA[I'm increasingly big on frameworks for structured thinking, and of course design thinking is very popular right now. So when the opportunity…]]></description><link>https://kristinamacekovic.github.io/design-thinking-notes/</link><guid isPermaLink="false">https://kristinamacekovic.github.io/design-thinking-notes/</guid><pubDate>Sat, 23 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;m increasingly big on frameworks for structured thinking, and of course design thinking is very popular right now. So when the opportunity came to attend a design thinking workshop (thanks to the lovely ladies at &lt;a href=&quot;https://femme-palette.mn.co/share/pbLck9eCCjwAVLuK&quot;&gt;Femme Palette&lt;/a&gt;), I was immediately sold.&lt;/p&gt;
+&lt;p&gt;This post is meant to be sort of a reminder/notes for myself, and a short intro for anybody else wanting to learn more about it.&lt;/p&gt;
+&lt;p&gt;Concerning the materials, I found a wonderful workshop kit that&apos;s free to download over at &lt;a href=&quot;https://marvelapp.com/workshops&quot;&gt;Marvel&lt;/a&gt;, so you can download it, follow along or even organise your own workshop! The package contains all you&apos;d need for participants and facilitators, so it&apos;s a really comprehensive resource.&lt;/p&gt;
+&lt;h1&gt;What is it?&lt;/h1&gt;
+&lt;p&gt;Design is oftentimes mistaken for an aesthetic-focused field. On the contrary—while pleasing aesthetics is often a side product of good design, the main objective of design is to &lt;em&gt;solve problems while putting users and experiences first&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Design thinking is a methodology used by designers to facilitate ideation and rapid prototype development by focusing on users and their needs. Although the name says design, you don&apos;t need to be a designer to reap benefits from its usage. If you have a problem you want to solve with a clear user at the other end, design thinking is probably a good place to start.&lt;/p&gt;
+&lt;p&gt;The method boils down to 5 stages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Emphatise&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Know the user you&apos;re designing for—you want to know their needs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Define&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Clearly&lt;/em&gt; define the problem you&apos;re trying to solve.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ideate&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Produce different ideas and solutions that might be useful. In this stage, there are no bad ideas!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Prototype&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Turn ideas into realistic mockups that you can use to test.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Test&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gain feedback from the intended user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The goal is to move at speed to generate ideas and produce a prototype that can be tested on the users. The upside for the user is their needs will (should) be met. The upside for you is you&apos;ll have a testable product very quickly, so you won&apos;t spend too much time on something nobody needs. Also, by keeping the user in mind during the production process, there will be less chance of this situation in the first place.&lt;/p&gt;
+&lt;h1&gt;Let&apos;s begin the workshop!&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Timeframe:&lt;/strong&gt; from 1 hour to 1 day&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agenda with rough time distribution&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Empathise: 10% of the time&lt;/li&gt;
+&lt;li&gt;Define: 10%&lt;/li&gt;
+&lt;li&gt;Ideate: 10%&lt;/li&gt;
+&lt;li&gt;Prototype: 50%&lt;/li&gt;
+&lt;li&gt;Test: 20%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Theme:&lt;/strong&gt; If you&apos;re doing this in your company, this is probably the problem you&apos;re trying to solve (new feature, app, store location, you name it). If it&apos;s a general workshop, each team could have a different problem/theme.&lt;/p&gt;
+&lt;h2&gt;1. Empathise&lt;/h2&gt;
+&lt;p&gt;As the name suggests, you should get in the head of your end-user and try to think of their daily experience. This will be your guiding light during the other sections of the workshop. This should be as specific as you can get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How old are they?&lt;/li&gt;
+&lt;li&gt;What do they eat?&lt;/li&gt;
+&lt;li&gt;What&apos;s their occupation?&lt;/li&gt;
+&lt;li&gt;Where do they live?&lt;/li&gt;
+&lt;li&gt;Do they live alone or with someone? Their relationship status?&lt;/li&gt;
+&lt;li&gt;What&apos;s their daily routine like?&lt;/li&gt;
+&lt;li&gt;What is their mission in life, i. e. what makes them tick?&lt;/li&gt;
+&lt;li&gt;What problems do they face day to day?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here you can also think about their personality traits, likes/dislikes, goals, map out their typical schedule etc.&lt;/p&gt;
+&lt;h2&gt;2. Define&lt;/h2&gt;
+&lt;p&gt;The goal of this section should be to define a &lt;em&gt;meaningful&lt;/em&gt; problem. The problem should be meaningful for the end-user, and describe a pain point in their (daily) experience. Try to be as clear and focused as possible, not to make the problem vague and thus hard to solve. Refer to the previous stage as often as needed not to lose track of the user&apos;s needs. While doing so, think—why is this (and is it really) a problem for them and why is it so important to them?&lt;/p&gt;
+&lt;h2&gt;3. Ideate&lt;/h2&gt;
+&lt;p&gt;Time to let loose. The goal here is to generate as many ideas as possible. Nothing is off limits or too crazy to at least mention, as long as it&apos;s routed in the original problem of our user.&lt;/p&gt;
+&lt;p&gt;Now we can get closer to the right idea by asking&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Our user needs to be able to...&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;⇒&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Our design needs these features...&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This way we can root out unrealistic ideas.&lt;/p&gt;
+&lt;p&gt;After you pick an idea, think of a name for your product/feature and give it a catchy tagline!&lt;/p&gt;
+&lt;h2&gt;4. Prototype&lt;/h2&gt;
+&lt;p&gt;Now it&apos;s time to make it real. A picture says a 1000 words, so the best way to really test a product is to make it and show it to people. While working on your prototypes, keep in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;don&apos;t get hung up on visuals, the goal is to &lt;em&gt;build&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;move fast, don&apos;t spend too much time on one idea&lt;/li&gt;
+&lt;li&gt;design only what is essential for testing—everything else can be added later&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In general, start with a flowchart of the &lt;em&gt;user journey,&lt;/em&gt; i. e. how they will probably interact with your solution. For example, they open the home page, click the search button, enter search term, it takes them to the results page, etc.&lt;/p&gt;
+&lt;p&gt;Then, sketch out the screens of your product (desktop or mobile). If you have time, you can do an interactive prototype, but a simple sketch is enough for starters.&lt;/p&gt;
+&lt;h2&gt;5. Test&lt;/h2&gt;
+&lt;p&gt;Expose the potential user to your prototype. Let them interact with it and try not to interfere too much. Notice any setbacks and issues they experienced. At the end you should have a list of next steps—suggestions that could make your solution better. At the end of the test, you can ask some questions like: did you like the app, would you use it again, was something confusing for you (if yes, what and why), etc. Note down the feedback. Maybe there will be some positives you didn&apos;t expect, or negatives you didn&apos;t think of during the ideation process.&lt;/p&gt;
+&lt;p&gt;That&apos;s it, you&apos;re done! At this point, you should have a much clearer road ahead, so you can start on the development. When you get stuck or want to add additional features, you can go back to design thinking to facilitate the development process.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Scraping the web and making wordclouds with Python]]></title><description><![CDATA[Recently I started going through Harvard's CS109 class, which aims to be a practical and broad intro to data science (using python). I'm…]]></description><link>https://kristinamacekovic.github.io/scraping-wordcloud/</link><guid isPermaLink="false">https://kristinamacekovic.github.io/scraping-wordcloud/</guid><pubDate>Fri, 01 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently I started going through Harvard&apos;s &lt;a href=&quot;http://cs109.github.io/2015/&quot;&gt;CS109 class&lt;/a&gt;, which aims to be a practical and broad intro to data science (using python). I&apos;m enjoying it a lot, and it has definitely given me a push to do something with python (finally!).&lt;/p&gt;
+&lt;p&gt;A few months ago, I was intrigued by the beautiful SQL lessons at &lt;a href=&quot;https://selectstarsql.com&quot;&gt;SELECT * SQL&lt;/a&gt;—mainly because of the excellent content, but also because of the intriguing data set. The data set deals with last statements of prisoners on death row. It is definitely a controversial topic, but I think an interesting one that can only spark productive discussion. What is really interesting is that such data &lt;em&gt;exists&lt;/em&gt; and is &lt;em&gt;publicly accessible.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For the little project, I decided to scrape the data and do some type of short analysis that could be impactful. I ended up doing a word cloud of the statements (inspiration was &lt;a href=&quot;http://www.goodbyewarden.com/&quot;&gt;Goodbye, Warden&lt;/a&gt;, data is &lt;a href=&quot;https://www.tdcj.texas.gov/death_row/dr_executed_offenders.html&quot;&gt;here&lt;/a&gt; and is the same as for SELECT * SQL). So, lets start.&lt;/p&gt;
+&lt;h1&gt;The Process&lt;/h1&gt;
+&lt;p&gt;Import the relevant modules.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	&lt;span class=&quot;token comment&quot;&gt;# module for http requests&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; requests
+	&lt;span class=&quot;token comment&quot;&gt;# module for handling markup objects&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; bs4 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; BeautifulSoup
+	&lt;span class=&quot;token comment&quot;&gt;# visualization module&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; matplotlib
+	&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; matplotlib&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pyplot &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; plt
+	&lt;span class=&quot;token comment&quot;&gt;# print out graphics in the document&lt;/span&gt;
+	&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;matplotlib inline
+	&lt;span class=&quot;token comment&quot;&gt;# module that implements word clouds&lt;/span&gt;
+	&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; wordcloud &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; WordCloud&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Get the site with the links to all the prisoner information. To get a manageable version, apply BeautifulSoup to the original results. The prettify function can be used to get a more human-readable version of the text.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	main_pg_txt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; requests&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;https://www.tdcj.texas.gov/death_row/dr_executed_offenders.html&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;text
+	&lt;span class=&quot;token comment&quot;&gt;# main_pg_txt&lt;/span&gt;
+	main_pg_html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; BeautifulSoup&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;main_pg_txt&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# main_pg_html.prettify()&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# main_pg_html&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now it&apos;s time to figure out how to access the last statements. Here the crucial tools is the dev tools in the browser (element inspector in particular). I was expecting the &quot;Last Statement&quot; to have some type of class or id, but unfortunately it didn&apos;t have, so I had to find a common structure and use that instead.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/45718b260d0250147cd97ebff76e9426/07a9c/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.69620253164557%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbUlEQVR42o3PS09TURSG4fMziC1Uclp6oaUttJX29A4K4oD4H4wTB4516sREB4aJDhyowUQkgYFCMNwkUYOmFNRqWwIFLEio5VJ6OQ3avqaHapCRK3my9l7J/rK2EF3eZHF5i4VkmjuPxrh++wn3h2d4F1tnPrZGIpUmtZVhO5vjc2pbmS8kN4kk0orauZYRXd5SusCJunrzHtZL17g1MAgVmVL+gHLxEKjyvyX8qlSoVqscHf3k7sMRrtwYYODxC55NvOfB8GsGxz8wNLnI8NSxkdmPPJ9aZGgyytOJCHPRFeV9pVJTQahd/qjUwwvFEtPzMUZnlxiZjjI6s8j4XJRXb5aYfLvE+NwCL2cjjM1FicROBZ5ct1wuI8sy5bJMqVhga2eP75k9drIHlAqHyMU8B3tZcvu75PayFHL7yKXCv18uyTI1hUKB3d1dMpkMPzIZ1je+sRRf5VN8lS/La6yvb5BaW+NrPE48kSCRTLKysko6nSafz1MsFhXC+Z4+ui/0EQp1EwqFCQRDBIMhfL4AHsmPW/IheQP4/QG8Xj8ej5fOTjdut6R0l+scbrcHSfLhD4QRRFGPze7E4fRgsdnRm0xodXpErR6twoBW1CPW6bTG45nWgFrdhErVSEPDGaWrVE0IZoudTncQr9SF0+nF2uagrc2B2WyjtbXOXKfcrX+7VtuCKLag0+kxGs1Yre0IBr0Jm82Jo92Nrc2JzerAZLJQm59mNLT+QxR16HQGNJpmZcPGRg2CxdWN3dOLJ9iPFLqMFO7H4btIu6eHDqkHh9SrnGssri5aHeFjHSHONutQqxpRqzVKWC3wN41pTLjldd9BAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Screenshot2019 02 01at21 d6c00a7a fa05 474c 89d6 56a21e509766 49 24&quot;
+        title=&quot;&quot;
+        src=&quot;/static/45718b260d0250147cd97ebff76e9426/f058b/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png&quot;
+        srcset=&quot;/static/45718b260d0250147cd97ebff76e9426/c26ae/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 158w,
+/static/45718b260d0250147cd97ebff76e9426/6bdcf/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 315w,
+/static/45718b260d0250147cd97ebff76e9426/f058b/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 630w,
+/static/45718b260d0250147cd97ebff76e9426/40601/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 945w,
+/static/45718b260d0250147cd97ebff76e9426/78612/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 1260w,
+/static/45718b260d0250147cd97ebff76e9426/07a9c/Screenshot2019-02-01at21-d6c00a7a-fa05-474c-89d6-56a21e509766.49.24.png 1440w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Using the bs4&apos;s function find_all, we can find all links which contain the wanted text.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	&lt;span class=&quot;token comment&quot;&gt;# find all links with text &quot;Last Statement&quot;&lt;/span&gt;
+	links &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; main_pg_html&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;find_all&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; href&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; text&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Last Statement&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# len(links)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# links&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now it&apos;s easy to get all the href&apos;s inside the link tags. Two of the links were of different extensions compared to the others so I manually changed them. Then I defined the urls I&apos;m going to use as the base url concatenated with the extracted links.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	&lt;span class=&quot;token comment&quot;&gt;# get the urls&lt;/span&gt;
+	urls &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;link&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;href&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; link &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; links&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# urls&lt;/span&gt;
+	urls&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;dr_info/cardenasrubenlast.html&apos;&lt;/span&gt;
+	urls&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;dr_info/pruettrobertlast.html&apos;&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# urls&lt;/span&gt;
+	whole_urls &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;https://www.tdcj.texas.gov/death_row/&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; url &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; url &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; urls&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# whole_urls&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Once again, the structure of the pages with the statements wasn&apos;t unified so I had to find a pattern and apply it like this (most of the times, it ended up being the 5th paragraph).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46f83bfaac08fe3a1f786972b89a900c/73a2e/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.746835443037973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABb0lEQVR42lWMSU9aYRhG7x8yFe7wcUcEL9DGmlKNRhJnxDLcGlv5H6ZB7EoSGis/QIa4cuPCqHHYOsB100W7cuOiTXsaoDX4JifveZ7FIzF4v3/Cn188Pvzg5OyUm9trOv4d7U6X25779+0+fpuO3+b7N//ZhLRTP6fSuKTauqLa7Pv+4TFHR/t8rtX59KVBabdJabf/t762KO+1KNcO2Kw22a4dUKmfsdO4oNK4QMp4ReYz75lILbGcW2dhdY25dJZsPs/iqsfiu27OM7/i9fJcOsdsOt9jpfCR1JJHulAk422wnPuAFHEs4pERoo5BPOJg6wKhBglpKromYwgFOTCEKr9AKAGUwBCaMtzLuhZENWPohoVthrCMENKwahFzx3mbnOblq0l000XWbGThIGsOwf8uuu48uSLCKMLGDbtEw1FUVUWEuoPGGLY7RTgxg51IYUSnUJwksv0G5R+D/qyzXuNG4sRGY1i2hWma/AWV/BoMMqnOmAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Screenshot2019 02 01at22 39dccc7f f8f4 4a61 a959 9d85a38a3d02 19 58&quot;
+        title=&quot;&quot;
+        src=&quot;/static/46f83bfaac08fe3a1f786972b89a900c/f058b/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png&quot;
+        srcset=&quot;/static/46f83bfaac08fe3a1f786972b89a900c/c26ae/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 158w,
+/static/46f83bfaac08fe3a1f786972b89a900c/6bdcf/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 315w,
+/static/46f83bfaac08fe3a1f786972b89a900c/f058b/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 630w,
+/static/46f83bfaac08fe3a1f786972b89a900c/40601/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 945w,
+/static/46f83bfaac08fe3a1f786972b89a900c/78612/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 1260w,
+/static/46f83bfaac08fe3a1f786972b89a900c/73a2e/Screenshot2019-02-01at22-39dccc7f-f8f4-4a61-a959-9d85a38a3d02.19.58.png 1439w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;I then defined a function which goes through an array of urls, for each url processes it, gets the statement and appends it to an array.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_last_statements&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;urls&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+		statements &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; url &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; urls&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+			site &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; requests&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;text
+			html &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; BeautifulSoup&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			ps &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; html&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;find_all&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;p&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+				statement &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; ps&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getText&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			statements&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;statement&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; statements&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Assign the statements array with our array of links.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	last_statements &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; get_last_statements&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;whole_urls&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# last_statements&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Join all the statements into one string separated by blanks:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	combined &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;statement &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; statement &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; last_statements&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# combined&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make a word cloud using the Wordcloud function (from the module of the same name) and save to a png file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;	wordcloud &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; WordCloud&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max_font_size&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; max_words&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; background_color&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;white&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;generate&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;combined&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+	&lt;span class=&quot;token comment&quot;&gt;# Display the generated image:&lt;/span&gt;
+	plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;imshow&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;wordcloud&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; interpolation&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;bilinear&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;axis&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;off&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	plt&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;show&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;token comment&quot;&gt;# save to png file&lt;/span&gt;
+	wordcloud&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;to_file&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;last_statements.png&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;The Result&lt;/h1&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/af2bf8782a2c76e4b7602b0ce5cc8704/e17e5/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDUlEQVR42gXBW2+aUAAAYH77Xpdsb8v20qzNsjTtZtJldWmtSLU1IlgQuQoHOHCO54Icrs5e9rDvk5KQhgikReJwc8t8vCu3GYwhRX1KjiDqbNY0NiYB5T5l25KiA17tT93qT/PaS4X4q5HFppItca/wq21jz9iNVk7UcqKL8S29cApvlkAVZ2u6swpiMGjXF5tiyEouhSZWn4z4zQpqJ27DlVD0aqLupytuWfVUF3LUBABzx82jLdH1FMAcdCNfTFFRSXnMXDuL8x0VAtDy0U+hwBaFSpTIUXTtBrMkfcJES5G9IyHEvIVRM1qzu5BkUhLSOKXy2JyONqjnLgesE1lbWJhNQarEMCgyeojXONNTjJoCddQRQ69U8L6RgIc3Zvo4c79/kQ//Durk4e5KCba5uQYgJ4YWe4Y3H84o5bimOiIG37rVeVIug4xJou5dRl0v//ltpi7B4EReL70fX+XJr8V4sJjfWp/fDc4+/JZlzX/zVZRkLY3aRSiWDsBS2u7Ddr+YOOefbiFmlyfKzcDUVsH1QD19P+QVOfs4nN8bkKXomPJjvH+xN+LCr2QuegmUPKzxw9wYyUpgQseMNqtR9+ohbOWxFhJiWdn4Wk8ZQkcARLTAjw/4xq8t0jdS3tRr5gUd8PskyElWiedXu2nN+jnsnh0vjAEsIRG8Q+ULSWoalihvEGn74nD4Dz2m/lgksNf7AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Last Statements Word Cloud&quot;
+        title=&quot;&quot;
+        src=&quot;/static/af2bf8782a2c76e4b7602b0ce5cc8704/e17e5/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png&quot;
+        srcset=&quot;/static/af2bf8782a2c76e4b7602b0ce5cc8704/c26ae/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png 158w,
+/static/af2bf8782a2c76e4b7602b0ce5cc8704/6bdcf/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png 315w,
+/static/af2bf8782a2c76e4b7602b0ce5cc8704/e17e5/last_statements-fefe8fdd-9376-4547-af05-534c1fbf37b7.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h1&gt;Summary&lt;/h1&gt;
+&lt;p&gt;This was a very short exercise in python and web scraping. Definitely, a lot more can be done and a more rigorous approach can be taken. For now it was a good start with immediate results, and maybe some day I&apos;ll get back to the data in the future with more ideas. The general approach was:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Starting point: an origin site with a bunch of links&lt;/li&gt;
+&lt;li&gt;Find a way to get all the urls to the separate sites (use dev tools inspector)&lt;/li&gt;
+&lt;li&gt;Get all the urls and store them in an array&lt;/li&gt;
+&lt;li&gt;Investigate again with element inspector how to get a particular statement from separate site&lt;/li&gt;
+&lt;li&gt;Define a function that for each url, grabs a particular statement and stores it in an array&lt;/li&gt;
+&lt;li&gt;Combine all the statements into a single string and input it into the wordcloud function&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[What I Learned from Diana]]></title><description><![CDATA[This is a summary and reflection on the manga "The Adventures of Johnny Bunko" by Daniel H. Pink. You can purchase the book on Amazon. Stop…]]></description><link>https://kristinamacekovic.github.io/what-i-learn-from-diana/</link><guid isPermaLink="false">https://kristinamacekovic.github.io/what-i-learn-from-diana/</guid><pubDate>Sun, 13 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;em&gt;This is a summary and reflection on the manga &quot;The Adventures of Johnny Bunko&quot; by Daniel H. Pink. You can purchase the book on &lt;a href=&quot;https://www.amazon.com/Adventures-Johnny-Bunko-Career-Guide-ebook/dp/B0015DRPL8&quot;&gt;Amazon&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Stop me if you&apos;ve heard this one before: you&apos;re out of school (college, university; whatever), ready to take on the world. But soon enough, you come to the realisation that you don&apos;t really know how and what that actually means for you personally—you&apos;ve spent your whole life following the roadmap carefully laid out for you (by whom exactly?). Now, suddenly, it&apos;s up to you to make the new roadmap and put it into action.&lt;/p&gt;
+&lt;p&gt;It turns out, it&apos;s not that easy to do. In this new world, you&apos;re the one who defines success and happiness. Unfortunately, up till now, success was only measured in terms of standardised tests and competition. How do you go about defining these new parameters that will be tailored to you, and not just follow everybody else&apos;s lead (supposing this is what you want to do)?&lt;/p&gt;
+&lt;p&gt;When you first start thinking about your working career (and in that respect, most of your adult life), if you&apos;re not one of the lucky ones that know from a young age what they want to do, you&apos;re tortured by questions. What do I want to do with my life? What if you studied something just because it was the &quot;safest&quot; choice at the time? If you want to change directions, how to do it? How can I be happy at work? How can I be &lt;em&gt;good&lt;/em&gt; at what I do? How can I make a n-year plan that will take me where I want to be?&lt;/p&gt;
+&lt;p&gt;All these questions and more have been bugging me too for some time, so when I first learned about this unique book while listening to Tim Ferriss&apos; &lt;a href=&quot;https://tim.blog/2014/08/29/kevin-kelly/&quot;&gt;podcast&lt;/a&gt; where he interviewed Kevin Kelly, I immediately jumped to the opportunity to read it. This book is actually in manga format and exceptionally easy and fast to read, but the lessons you take from it can serve you for years to come. As the name says, it follows the adventures of Johnny Bunko, a new graduate working at his first job. Of course, he is tormented by the usual things people in that position experience: horrible boss, uninspiring work, wishful thinking about other possible things he would like to be working on, etc. With the help of some magic chopsticks, he gets help from a magical woman-creature (with an MBA from Oxford funny enough) called Diana. We can think of Diana as the fairy godmother of office workers, sent to teach the masses about what makes a successful and satisfying career. With no further ado, this is what Johnny and I have learned from Diana.&lt;/p&gt;
+&lt;h1&gt;Lesson 1: There is no plan&lt;/h1&gt;
+&lt;p&gt;Probably most of us have had or currently have some sort of a &quot;plan&quot; in place, which is supposed to take us to the place we want to be in a few years time. The problem is—life doesn&apos;t work that way, and if you force it to try to work that way, you&apos;re probably just going to get stuck in one place. Usually we think (well we &lt;em&gt;plan&lt;/em&gt;) we&apos;re going to do A, which is going to open doors for us to B, which will ultimately get us an offer from C, which we wanted in the first place. But life and careers don&apos;t have to be that way, and much to our dissatisfaction, they usually aren&apos;t. The real scenario would look more like A, then soup, then colour green, then cloud, and finally get to W.&lt;/p&gt;
+&lt;p&gt;How to deal with this? What distinguishes most successful people from the rest is that they make decisions for fundamental instead of instrumental reasons. What&apos;s the difference? You do something for &lt;strong&gt;instrumental&lt;/strong&gt; reasons because you think it will lead to something else, regardless if you enjoy it or you think it&apos;s worthwhile. On the other hand, you so something for &lt;strong&gt;fundamental&lt;/strong&gt; reasons if you think it&apos;s valuable, either to you or somebody else, and regardless of what it may lead to. People who use that kind of reasoning (usually they don&apos;t think about it, they&apos;re just wired like that) take certain jobs because and only if they know they will enjoy the work, the culture etc, and not because it may be a stepping stone for something else. They also learn and do stuff just for their intrinsic value, not because it&apos;s popular, sought after or prestigious.&lt;/p&gt;
+&lt;p&gt;Jason Fried (founder of Basecamp) has stated he never makes plans because it doesn&apos;t make sense to make plans based on you &lt;em&gt;now&lt;/em&gt;, because the person you&apos;ll be when you achieve this will be totally different. When you think of it that way, it makes more sense, right?&lt;/p&gt;
+&lt;h1&gt;Lesson 2: Think strengths, not weaknesses&lt;/h1&gt;
+&lt;p&gt;I noticed I&apos;m not really good at my work, and it&apos;s a source of a lot of tension and anxiety. But if I only take this and this course and after that learn this and persevere through this, after a few years, maybe I&apos;ll have a shot at becoming decent at it!&lt;/p&gt;
+&lt;p&gt;Instead of torturing yourself like this, why not concentrate on what you&apos;re good at, a not try to correct your weaker sides (this does not mean don&apos;t ever try to get better at something, just don&apos;t spent time on things you&apos;re at best going to be mediocre at, especially if those same things you don&apos;t enjoy doing)?&lt;/p&gt;
+&lt;p&gt;Think about this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What do you consistently do &lt;strong&gt;well&lt;/strong&gt;?&lt;/li&gt;
+&lt;li&gt;What &lt;strong&gt;gives&lt;/strong&gt; you energy rather than &lt;strong&gt;drains&lt;/strong&gt; it?&lt;/li&gt;
+&lt;li&gt;What sorts of activities create &lt;strong&gt;flow&lt;/strong&gt; for you?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Flow&lt;/strong&gt; is the mental state of operation in which the person is fully immersed in what he or she is doing, characterised by a feeling of energised focus, full involvement, and success in the process of the activity.&lt;/p&gt;
+&lt;h1&gt;Lesson 3: It&apos;s not about you&lt;/h1&gt;
+&lt;p&gt;The point of the work you&apos;re doing is not for you to self-actualise and live out your wishes. The point is to create value for your customer, boss, company, coworkers. Creating this value will lead to creating value for yourself through recognition from others. Reserve some passions for hobbies or side-projects. Connecting to lesson 2—this value will be greater if you&apos;re doing something that you&apos;re good at.&lt;/p&gt;
+&lt;h1&gt;Lesson 4: Persistence trumps talent&lt;/h1&gt;
+&lt;p&gt;No amount of natural talent will ever trump persistence. This is just a fact, but it&apos;s sometimes hard to notice because success stories are often portrayed as overnight and due to some innate abilities. Have you noticed that athletes (any type of activity that instilled practice as crucial from a young age) often have success in other fields as well? This is because they&apos;re used to constant, never-ending, mind-numbing drilling that is needed for excellence. Compound interest translates to performance as well—small increments in skill add on to each other and lead to success.&lt;/p&gt;
+&lt;h1&gt;Lesson 5: Make excellent mistakes&lt;/h1&gt;
+&lt;p&gt;Too many people fear failure (oftentimes the product of traditional education), usually not to feel embarrassed and ridiculed by peers. On the other hand, Peter Thiel (founder of Paypal, Palantir, author of &quot;0 to 1&quot;) thinks that failure is overrated, in the sense that (companies, but can be applied to people as well) tend to guard themselves from failure by keeping their exit strategies (options) open.&lt;/p&gt;
+&lt;p&gt;What we should actually do is make &lt;em&gt;excellent&lt;/em&gt; mistakes. Meaning: make mistakes from which the benefits of what you&apos;ve learned exceed the costs of the screw-up.&lt;/p&gt;
+&lt;h1&gt;Lesson 6: Leave an imprint&lt;/h1&gt;
+&lt;p&gt;At the end of the day, during your life, you want to have done something of significance. Significant not in a look-at-me-I&apos;m-famous way, but in a way that after you&apos;re gone, you&apos;ve left an imprint, an additional value on your family, friends, community, industry or some other aspect of your life. Too many people start thinking about this only when it&apos;s too late. What you can do is start now.&lt;/p&gt;</content:encoded></item></channel></rss>
