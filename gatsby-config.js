@@ -11,14 +11,13 @@ module.exports = {
   siteMetadata: {
     title: `Kristina Macekovic`,
     author: {
-      name: `Kristina Macekovic`,
-      summary: `Documenting what I do and think`,
+      name: `Kristina Macekovic`
     },
     description: `I learn best when I share with others`,
     siteUrl: `https://kristinamacekovic.github.io/`,
     social: {
       twitter: `neznam_neznam_n`,
-      tiktok: `kik`
+      linkedin: `kik`
     },
   },
   plugins: [
